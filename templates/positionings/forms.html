@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>STANDARD</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/commons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="container">
+  <nav></nav>
+  <main>
+    <div class="h3">Apply form-control</div>
+    <!-- apply form-control -->
+    <!-- form-control 를 적용시키면 기본적으로 라인 하나를 차지하게 됨 -->
+    <label for="email">Email:</label>
+    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+
+    <hr>
+
+    <!-- apply form-control with row and col -->
+    <div class="h3">Apply form-control with row and col</div>
+    <div class="row">
+      <div class="col-3">
+        <input type="text" class="form-control-plaintext" placeholder="Email : ">
+      </div>
+      <div class="col-6">
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- select menu -->
+    <div>
+      <label for="carcompanyname">Choose car company : </label>
+      <select class="form-select" name="car_company_name" id="carcompanyname">
+        <option value="CAR_01">볼복</option>
+        <option value="CAR_02" selected>현대</option>
+        <option value="CAR_03">아우디</option>
+        <option value="CAR_04">포르쉐</option>
+      </select>
+    </div>
+
+    <hr>
+
+    <!-- apply form-control with row and col -->
+    <div class="h3">Apply form-control with row and col</div>
+    <div c vlass="row">
+      <div class="col-3">
+        <input type="text" class="form-control-plaintext" placeholder="Email : ">
+      </div>
+      <div class="col-4">
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      </div>
+      <div class="col-5">
+        <select class="form-select" name="car_company_name" id="carcompanyname">
+          <option value="CAR_01">볼복</option>
+          <option value="CAR_02" selected>현대</option>
+          <option value="CAR_03">아우디</option>
+          <option value="CAR_04">포르쉐</option>
+        </select>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- radio type -->
+
+    <div>
+      연구소 이름 : <input type="text" name="lab_name"  id="" placeholder="SKY_LAB">
+    </div>
+    <br>
+    <div>
+      <div>-희망 사항 선택-</div>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="hope_lang" value="dog_lang" id="doglang2">
+      강아지 말 희망
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="hope_lang" value="cat_lang" id="catlang2">
+      <label class="form-check-label" for="catlang2">고양이 말 희망</label>
+    </div>
+    <div>
+      <button type="submit">link로 정보 전달</button>
+      <button type="reset">같은 form 내 정보 재설정</button>
+    </div>
+
+  </main>
+  <footer></footer>
+
+</body>
+
+</html>
