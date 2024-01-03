@@ -29,6 +29,8 @@ app.include_router(main_gadget_router, prefix='/gadgets') # 이 아이의 이름
 from positionings import positioning_router as main_positioning_router
 app.include_router(main_positioning_router, prefix='/positionings')
 
+from routes.users import router as users_router
+app.include_router(users_router, prefix='/users')
 
 
 # from fastapi import Request
